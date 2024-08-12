@@ -1,0 +1,126 @@
+@import "../../app.scss";
+.web-card{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 30%;
+    background-color: #f5f4f7;
+    padding: 3rem;
+    transform-style: preserve-3d;
+
+    h3{
+        text-align: center;
+        font-size: 1.5rem;
+        transform: translateZ(50px);
+        transform-style: preserve-3d;
+    }
+    .front-end{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transform: translateZ(50px);
+        transform-style: preserve-3d;
+        .icons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            height: 100%;
+            flex-wrap: wrap;
+            transform: translateZ(50px);
+            transform-style: preserve-3d;
+            img{
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+    .back-end{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transform: translateZ(50px);
+        transform-style: preserve-3d;
+        .icons{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            transform: translateZ(50px);
+            transform-style: preserve-3d;
+            img{
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+
+    }
+
+}
+@include mobile{
+    .web-card{
+        width: 100%;
+        padding: 1rem;
+        h3{
+            padding-bottom: 1rem;
+        }
+        .front-end{
+            .icons{
+                img{
+                    height: 2rem;
+                    width: 2rem;
+                } 
+            }
+        }        
+        .back-end{
+            .icons{
+                img{
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+}
+@include tablet{
+    .web-card{
+        padding: 1rem;
+        h3{
+            padding-bottom: 1rem;
+        }
+        .front-end{
+            .icons{
+                img{
+                    height: 2rem;
+                    width: 2rem;
+                } 
+            }
+        }        
+        .back-end{
+            .icons{
+                img{
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+}
+@include desktop{
+    .web-card{
+        .front-end{
+            .icons{
+                img{
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}

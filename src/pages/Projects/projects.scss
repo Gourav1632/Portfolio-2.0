@@ -1,0 +1,70 @@
+@import "../../app.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.projects{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    margin-bottom: 8rem;
+    .projects-heading{
+        opacity: 0.7;
+        width: 70%;
+        span{
+            padding: 4rem;
+        }
+        hr{
+            color: #dcd4d4;
+        }
+    }
+    .projects-container{
+        width: 70%;
+    }
+    .hover-img{
+        position: fixed;
+        pointer-events: none;
+        cursor: pointer;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 400px;
+        width: 700px;
+        // border: 5px solid #EF5A6F;
+        transition: opacity 200ms ease-in-out;
+    }
+}
+@include mobile{
+    .projects{
+        .projects-heading{
+            span{
+                padding: 0;
+            }
+            hr{
+                margin-bottom: 1rem;
+            }
+        }
+        .projects-carousel{
+            width: 100vw;
+            overflow: hidden;
+        }
+    }
+}
+@include tablet{
+    .projects{
+        .projects-heading{
+            span{
+                padding: 0;
+            }
+            hr{
+                margin-bottom: 1rem;
+            }
+        }
+        .projects-carousel{
+            width: 100vw;
+            overflow: hidden;
+        }
+    }
+}

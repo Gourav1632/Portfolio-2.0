@@ -1,0 +1,29 @@
+@import "../../app.scss";
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #292a2f;
+    right: 0;
+    top: 0;
+    .bg{
+        z-index: 99;
+        max-width: 33%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #1b1b23;
+    }
+}
+
+@include mobile{
+    .menu{
+        .bg{
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.hover-button{
+    z-index: 2;
+    border: 1px solid  rgba(255,255,255,.2);
+    color: white;
+    background-color: transparent;
+    border-radius: 4rem;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    a{
+        cursor: none;
+        font-size: 1rem;
+        z-index: 3;
+        padding: 0 2rem;
+        font-family: "DM Sans", sans-serif;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .hover-button-overlay{
+        z-index: -1;
+        position: absolute;
+        background-color: #EF5A6F;
+        border-radius: 25% 25% 0 0;
+        height: 200%;
+        width: 100%;
+    }
+}

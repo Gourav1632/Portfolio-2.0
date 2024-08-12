@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "../../app.scss";
+
+.contact{
+    background-color: #1d1d21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 50vh;
+    font-family: "Inter", sans-serif;
+
+    .contact-container{
+        flex: 90;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+        gap: 2rem;
+        .contact-text{
+            display: flex;
+            align-items: center;
+            gap: 16rem;
+            padding: 0 1rem;
+            .contact-heading{
+                font-size: 8rem;
+            }
+            .icon{
+                height: 40px ;
+                width: 40px;
+
+            }
+        }
+        hr{
+            color: white;
+            opacity: 0.2;
+        }
+        .contact-details{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    footer{
+        flex: 10;
+        padding: 1rem 3rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        opacity: .5;
+        a{
+            color: white;
+            cursor: none;
+        }
+        .social{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
+@include mobile{
+    .contact{
+        height: 70vh;
+        .contact-container{
+            width: 100%;
+            .contact-text{
+                width: 100%;
+                gap: 2rem;
+                .contact-heading{
+                    font-size: 4rem;
+                }
+            }
+            .contact-details{
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        footer{
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: .5rem;
+            justify-content: center;
+            .credit{
+                text-align: center;
+            }
+            .copyright{
+                text-align: center;
+            }
+        }
+    }
+}
+@include tablet{
+    .contact{
+        height: 40vh;
+        .contact-container{
+            width: 100%;
+            .contact-text{
+                width: 100%;
+                gap: 2rem;
+                .contact-heading{
+                    font-size: 4rem;
+                }
+            }
+            .contact-details{
+                width: 100%;
+            }
+        }
+        footer{
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: .5rem;
+            justify-content: center;
+            .credit{
+                text-align: center;
+            }
+            .copyright{
+                text-align: center;
+            }
+        }
+    }
+}

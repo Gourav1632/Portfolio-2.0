@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "../../app.scss";
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 4rem;
+    .education-heading{
+        width: 100%;
+        text-align: center;
+        padding: 4rem;
+        font-size: 2rem;
+        font-weight: 1000;
+    }
+    .education-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .education-card{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            .logo{
+                border-radius: 100%;
+                img{
+                    width: 8rem ;
+                    height: 8rem;
+                }
+            }
+            .education-details{
+                flex: 80;
+                display: flex;
+                flex-direction: column;
+                .organisation{
+                    font-size: 2rem;
+                }
+                .degree{
+                    font-size: 1.5rem;
+                }
+                .branch{
+                    font-size: 1.5rem;
+                }
+                .year{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+@include mobile{
+    .education{
+        .education-heading{
+            padding-top: 2rem;
+        }
+        .education-container{
+            .education-card{
+                width: 100%;
+                flex-direction: column;
+                .education-details{
+                    padding:0  1.5rem;
+                    .organisation{
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                    .degree{
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                    }
+                    .branch{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include tablet{
+    .education{
+        .education-container{
+            .education-card{
+                width: 80%;
+            }
+        }
+    }
+}
+@include desktop{
+    .education{
+        .education-container{
+            .education-card{
+                width: 70%;
+            }
+        }
+    }
+}
