@@ -7,6 +7,10 @@ html{
     cursor: none;
     scroll-behavior: smooth;
 }
+::selection {
+    background: #fa4b5f; /* Background color of the selection */
+    color: #ffffff; /* Text color of the selection */
+  }
 
 
 @mixin mobile{

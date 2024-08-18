@@ -46,7 +46,7 @@
     .quote{
         height: 100%;
         position: relative;
-        background-color: #ebebeb;
+        background-color: #edf2f4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,7 +60,8 @@
             left: 10%;
             font-size: 6rem;
             font-weight: 1000;
-            color: #1d1d21;
+            user-select: none;
+            color: #0d1b2a;
         }
         .canvas{
             width: 100%;
@@ -69,10 +70,11 @@
         }
         .lower-text{
             text-transform: uppercase;
+            user-select: none;
             position: absolute;
             font-size: 6rem;
             bottom: 2rem;
-            color: #EF5A6F;
+            color: #ef233c;
             font-weight: 1000;
             right: 10%;
             z-index: 3;

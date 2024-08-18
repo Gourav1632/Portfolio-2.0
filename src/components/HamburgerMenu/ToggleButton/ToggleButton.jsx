@@ -7,7 +7,7 @@ function ToggleButton({ opened, setOpen }) {
     <motion.button
       className='toggle-button'
       onClick={() => setOpen((prev) => !prev)}
-      style={opened ? { backgroundColor: '#EF5A6F' } : { backgroundColor: '#1d1d21' }}
+      style={opened ? { backgroundColor: '#d90429' } : { backgroundColor: '#0d1321' }}
       whileHover= "hover"
     >
         <motion.div animate={opened?"open" : "closed"} className="hamburger-icon">

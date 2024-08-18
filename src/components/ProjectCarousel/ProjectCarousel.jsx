@@ -81,7 +81,7 @@ function ProjectCarousel({ projects }) {
     </motion.div>
     <div className="dots">
       {projects.map((project,index)=>{
-        return <button style={{backgroundColor: (index == imgIndex)? "blue" : "grey"}} key={index} onClick={()=>{setImgIndex(index)}}/>
+        return <button style={{backgroundColor: (index == imgIndex)? "#ef233c" : "#8d99ae"}} key={index} onClick={()=>{setImgIndex(index)}}/>
       })}
     </div>
     </>

@@ -3,7 +3,7 @@
 @import "../../app.scss";
 
 .contact{
-    background-color: #1d1d21;
+    background-color: #0d1321;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,7 @@
             padding: 0 1rem;
             .contact-heading{
                 font-size: 8rem;
+                color: #edf2f4;
             }
             .icon{
                 height: 40px ;

@@ -2,7 +2,7 @@
 @import "../../app.scss";
 
 .hero{
-    background-color: #1d1d21;
+    background-color: #0d1321;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,17 +21,21 @@
             justify-content: end;
             color: white;
             line-height: .9;
+            
             .hi{
                 padding-left: 1rem;
+
                 font-size: 8rem;
 
             }
             .gourav{
                 font-size: 20rem;
+
             }
             .kumar-skills{
                 display: flex;
                 align-items: center;
+
                 .kumar{
                     font-size: 20rem;
                 }
@@ -82,6 +86,7 @@
             right: 0;
             bottom: 0;
             button{
+                background-color: #8d99ae;
                 border: none;
                 font-size: 4rem;
                 padding: 4rem;
@@ -89,7 +94,7 @@
                 width: 20rem;
                 border-radius: 100%;
                 font-weight: 300;
-                color: #1d1d21;
+                color: white;
                 cursor: none;
             }
         }
@@ -133,7 +138,7 @@
     .hero{
         .navbar{
             padding: 40px;
-            font-size: 20px;
+            font-size: 20px;    
         }
         .container {
             gap: 16px;
