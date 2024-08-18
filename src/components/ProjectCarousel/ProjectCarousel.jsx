@@ -5,7 +5,7 @@ import ProjectCard from '../project-card/ProjectCard';
 import { useMotion } from '@react-three/drei';
 
 
-const DRAG_BUFFER = 50;
+const DRAG_BUFFER = 10;
 const AUTO_DELAY = 5000
 function ProjectCarousel({ projects }) {
   const intervalRef = useRef(null)

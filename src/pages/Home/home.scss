@@ -143,23 +143,29 @@
         .container {
             gap: 16px;
             flex-direction: column-reverse;
-            justify-content: start;
+            justify-content: space-between;
             padding: 16px;
             .text {
                 flex: none;
-                height: 284px;
                 justify-content: center;
+               
                 .hi {
                     font-size: 32px;
                     padding-left: .3rem;
                 }
                 .gourav{
                     font-size: 5rem;
+                    @include small{
+                        font-size: 4rem;
+                    }
                 }
                 .kumar-skills{
                     gap: 8px;
                     .kumar{
                         font-size: 5rem;
+                        @include small{
+                            font-size: 4rem;
+                        }
                     }
                     .skills{
                         font-size: 10px;
@@ -192,6 +198,10 @@
                     font-size: 2rem;
                     padding: 0;
                     border: none;
+                    @include small{
+                        height: 12rem;
+                        width: 12rem;
+                    }
                 }
             }
         }

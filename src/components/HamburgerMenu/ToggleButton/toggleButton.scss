@@ -40,6 +40,9 @@
 @include mobile{
     .toggle-button{
         width: 5rem;
-        height: 5rem
+        height: 5rem;
+        top:1rem;
+        right: 1rem;
+
     }
 };

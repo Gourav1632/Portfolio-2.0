@@ -91,9 +91,15 @@
             width: 100%;
             padding: 1.5rem;
             gap: 2rem;
+            @include small{
+                padding: 1rem;
+            }
             .big{
                 text-align: left;
                 font-size: 2.3rem;
+                @include small{
+                    font-size: 2rem;
+                }
             }
             .small{
                 flex-direction: row;
@@ -113,10 +119,16 @@
             .upper-text{
                 font-size: 2.5rem;
                 left: -10%;
+                @include small{
+                    font-size: 2rem;
+                }
             }
             .lower-text{
                 font-size: 2.5rem;
                 right: -10%;
+                @include small{
+                    font-size: 2rem;
+                }
             }
         }
     }
